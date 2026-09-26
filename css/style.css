@@ -1,0 +1,567 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fffaf7;
+    color: #333333;
+}
+
+nav {
+    background-color: #315c4c;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 17px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+body > p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 140px 20px;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.45),
+        rgba(0, 0, 0, 0.45)
+    ),
+    url("../images/hero-flowers.jpg");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0 0 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #315c4c;
+    color: white;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.btn:hover {
+    background-color: #24483b;
+}
+
+.welcome {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+}
+
+.welcome h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.welcome p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.page-header {
+    text-align: center;
+    padding: 50px 20px 30px;
+}
+
+.page-header h1 {
+    font-size: 40px;
+    margin: 0 0 10px;
+}
+
+.page-header p {
+    font-size: 18px;
+}
+
+.flower-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px 40px 70px;
+    flex-wrap: wrap;
+}
+
+.flower-card {
+    background-color: white;
+    width: 280px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.flower-card h2 {
+    font-size: 24px;
+    color: #315c4c;
+}
+
+.flower-card p {
+    line-height: 1.6;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #315c4c;
+}
+.flower-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.services-section {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px 40px 70px;
+    flex-wrap: wrap;
+}
+
+.services-content {
+    background-color: white;
+    width: 500px;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.services-content h2 {
+    color: #315c4c;
+    font-size: 28px;
+}
+
+.services-content p {
+    line-height: 1.6;
+}
+
+.services-content ul {
+    line-height: 2;
+    margin-bottom: 25px;
+}
+
+.pricing-box {
+    background-color: #eef5f1;
+    width: 300px;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-box h2 {
+    color: #315c4c;
+    font-size: 28px;
+}
+
+.pricing-box p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.wedding-image {
+    max-width: 940px;
+    margin: 0 auto 30px;
+    padding: 0 20px;
+}
+
+.wedding-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+.corporate-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px 40px 70px;
+}
+
+.corporate-content {
+    background-color: white;
+    max-width: 800px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.corporate-content h2 {
+    color: #315c4c;
+    font-size: 28px;
+}
+
+.corporate-content h3 {
+    color: #315c4c;
+    margin-top: 25px;
+}
+
+.corporate-content p {
+    line-height: 1.6;
+}
+
+.corporate-content ul {
+    line-height: 2;
+}
+
+.corporate-price {
+    margin-top: 25px;
+    font-size: 18px;
+}
+.corporate-image {
+    max-width: 880px;
+    margin: 0 auto 30px;
+    padding: 0 20px;
+}
+
+.corporate-image img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}.corporate-image {
+    max-width: 880px;
+    margin: 0 auto 30px;
+    padding: 0 20px;
+}
+
+.corporate-image img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px 40px 70px;
+    flex-wrap: wrap;
+}
+
+.contact-info,
+.contact-form {
+    background-color: white;
+    width: 400px;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2,
+.contact-info h3,
+.contact-form h2 {
+    color: #315c4c;
+}
+
+.contact-info p {
+    line-height: 1.6;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+
+    nav {
+        padding: 15px 10px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .hero {
+        padding: 90px 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .page-header h1 {
+        font-size: 32px;
+    }
+
+    .flower-grid {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .flower-card {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .services-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .services-content,
+    .pricing-box {
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .corporate-section {
+        padding: 20px;
+    }
+
+    .corporate-content {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .wedding-image img,
+    .corporate-image img {
+        height: 250px;
+    }
+}
+footer {
+    background-color: #315c4c;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+footer {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+nav a.active {
+    color: #ffffff;
+    border-bottom: 3px solid #2f855a;
+    padding-bottom: 6px;
+}
+/* FAQ Section */
+.faq-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.faq-section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.faq-item {
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #f5f5f5;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.faq-question:hover {
+    background-color: #e8e8e8;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    background-color: white;
+}
+
+.faq-answer p {
+    margin: 0;
+}
+/* FAQ Section */
+.faq-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.faq-section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.faq-item {
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #f5f5f5;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.faq-question:hover {
+    background-color: #e8e8e8;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    background-color: white;
+}
+
+.faq-answer p {
+    margin: 0;
+}
+.faq-answer {
+    display: none;
+    color: #222;
+    padding: 10px 15px;
+    background-color: white;
+}
+
+.faq-answer.active {
+    display: block;
+}
+@media screen and (max-width: 600px) {
+
+    .flower-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+    }
+
+    .flower-card {
+        width: 100% !important;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .flower-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .flower-card {
+        width: 90% !important;
+        max-width: 350px !important;
+        margin: 0 auto 20px auto !important;
+    }
+
+    .flower-card img {
+        width: 100% !important;
+        height: auto !important;
+    }
+}
