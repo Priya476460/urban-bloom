@@ -1,59 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Flowers | Urban Bloom Florist</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flowers | Urban Bloom Florist</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-   <nav>
-    <a href="index.html">Home</a>
-    <a href="flowers.html" class="active">Flowers</a>
-    <a href="weddings.html">Weddings & Events</a>
-    <a href="corporate.html">Corporate</a>
-    <a href="contact.html">Contact</a>
-</nav>
+  <header class="site-header">
+    <a href="index.html" class="logo">Urban Bloom</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="flowers.html" class="active">Flowers</a></li>
+        <li><a href="weddings.html">Weddings &amp; Events</a></li>
+        <li><a href="corporate.html">Corporate</a></li>
+        <li><a href="delivery.html">Delivery &amp; FAQ</a></li>
+        <li><a href="contact.html" class="btn">Enquire</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main class="flowers-page">
-
-    <section class="page-header">
-        <h1>Our Flowers</h1>
-        <p>Explore beautiful floral arrangements for every occasion.</p>
+  <main>
+    <section class="page-intro">
+      <h1>Our Flowers</h1>
+      <p>Explore beautiful floral arrangements for every occasion. Prices are indicative. Enquire to order.</p>
     </section>
 
-    <section class="flower-grid">
+    <section class="featured">
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="birthday">Birthday</button>
+        <button class="filter-btn" data-filter="anniversary">Anniversary</button>
+        <button class="filter-btn" data-filter="congratulations">Congratulations</button>
+        <button class="filter-btn" data-filter="thankyou">Thank You</button>
+        <button class="filter-btn" data-filter="sympathy">Sympathy</button>
+        <button class="filter-btn" data-filter="corporate">Corporate</button>
+      </div>
 
-       <div class="flower-card">
-    <img src="images/auckland-sunrise.jpg" alt="Colourful Auckland Sunrise flower bouquet">
-    <h2>Auckland Sunrise</h2>
-            <p>A bright seasonal bouquet featuring colourful flowers and fresh foliage.</p>
-            <p class="price">$69</p>
-            <a href="contact.html" class="btn enquire-btn" data-flower="Auckland Sunrise">Enquire Now</a>
-        </div>
+      <div class="card-grid">
+        <article class="card" data-category="birthday everyday">
+          <img src="images/auckland-sunrise.jpg" alt="Bright bouquet of colourful seasonal flowers">
+          <h3>Auckland Sunrise</h3>
+          <p>A bright seasonal bouquet featuring colourful flowers and fresh foliage.</p>
+          <p class="price">$69</p>
+          <a href="contact.html?flower=Auckland+Sunrise" class="btn">Enquire Now</a>
+        </article>
 
-       <div class="flower-card">
-    <img src="images/soft-blush.jpg" alt="Soft pink floral arrangement">
-    <h2>Soft Blush</h2>
-            <p>A soft pastel arrangement with roses and complementary seasonal blooms.</p>
-            <p class="price">$79</p>
-           <a href="contact.html" class="btn enquire-btn" data-flower="Soft Blush">Enquire Now</a>
-        </div>
+        <article class="card" data-category="anniversary thankyou">
+          <img src="images/soft-blush.jpg" alt="Soft pastel arrangement of pink roses">
+          <h3>Soft Blush</h3>
+          <p>A soft pastel arrangement with roses and complementary seasonal blooms.</p>
+          <p class="price">$79</p>
+          <a href="contact.html?flower=Soft+Blush" class="btn">Enquire Now</a>
+        </article>
 
-       <div class="flower-card">
-    <img src="images/native-grace.jpg" alt="Natural seasonal flower bouquet with greenery">
-    <h2>Native Grace</h2>
-            <p>A contemporary bouquet combining seasonal flowers, textured foliage and native-inspired elements.</p>
-            <p class="price">$85</p>
-         <a href="contact.html" class="btn enquire-btn" data-flower="Native Grace">Enquire Now</a>
-        </div>
+        <article class="card" data-category="congratulations everyday">
+          <img src="images/native-grace.jpg" alt="Contemporary bouquet with textured native-style foliage">
+          <h3>Native Grace</h3>
+          <p>Seasonal flowers, textured foliage and native-inspired elements.</p>
+          <p class="price">$85</p>
+          <a href="contact.html?flower=Native+Grace" class="btn">Enquire Now</a>
+        </article>
 
+        <article class="card" data-category="birthday congratulations">
+          <img src="images/celebration-mix.jpg" alt="Colourful mixed celebration bouquet">
+          <h3>Celebration Mix</h3>
+          <p>A colourful mixed bouquet designed for celebrations and special occasions.</p>
+          <p class="price">$75</p>
+          <a href="contact.html?flower=Celebration+Mix" class="btn">Enquire Now</a>
+        </article>
+
+        <article class="card" data-category="anniversary">
+          <img src="images/classic-rose.jpg" alt="Elegant bouquet of roses with greenery">
+          <h3>Classic Rose Collection</h3>
+          <p>An elegant arrangement featuring roses with simple seasonal greenery.</p>
+          <p class="price">$95</p>
+          <a href="contact.html?flower=Classic+Rose+Collection" class="btn">Enquire Now</a>
+        </article>
+
+        <article class="card" data-category="sympathy">
+          <img src="images/peaceful-wishes.jpg" alt="Soft white flowers with green foliage">
+          <h3>Peaceful Wishes</h3>
+          <p>A restrained arrangement using soft white flowers and green foliage.</p>
+          <p class="price">$89</p>
+          <a href="contact.html?flower=Peaceful+Wishes" class="btn">Enquire Now</a>
+        </article>
+
+        <article class="card" data-category="corporate">
+          <img src="images/urban-statement.jpg" alt="Large contemporary arrangement for a reception area">
+          <h3>Urban Statement Arrangement</h3>
+          <p>A contemporary arrangement for reception areas, offices and business events.</p>
+          <p class="price">From $120</p>
+          <a href="contact.html?flower=Urban+Statement+Arrangement" class="btn">Enquire Now</a>
+        </article>
+
+        <article class="card" data-category="birthday anniversary congratulations thankyou sympathy corporate">
+          <img src="images/designers-choice.jpg" alt="Florist-selected arrangement of seasonal flowers">
+          <h3>Seasonal Designer's Choice</h3>
+          <p>A florist-selected arrangement using the best available seasonal flowers.</p>
+          <p class="price">From $70</p>
+          <a href="contact.html?flower=Seasonal+Designer's+Choice" class="btn">Enquire Now</a>
+        </article>
+      </div>
     </section>
 
-</main>
-<script src="js/script.js"></script>
+    <section class="addons">
+      <h2>Gift Add-ons</h2>
+      <table>
+        <tr><th>Add-on</th><th>Price</th></tr>
+        <tr><td>Glass vase</td><td>$25</td></tr>
+        <tr><td>Greeting card</td><td>$8</td></tr>
+        <tr><td>Box of chocolates</td><td>$18</td></tr>
+        <tr><td>Premium gift wrapping</td><td>$12</td></tr>
+      </table>
+      <a href="contact.html" class="btn">Enquire About an Order</a>
+    </section>
+  </main>
 
+  <footer class="site-footer">
+    <p>Urban Bloom Florist · Auckland · 09 000 0001 · hello@urbanbloom.kiwi</p>
+    <p>Mon–Fri 8:30am–5:30pm · Sat 9am–3pm · Sun Closed</p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
