@@ -691,3 +691,79 @@ a {
     padding: 24px;
   }
 }
+/* ===== Mobile menu button ===== */
+.nav-toggle {
+  display: none;
+  width: 46px;
+  height: 46px;
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-toggle-bar,
+.nav-toggle-bar::before,
+.nav-toggle-bar::after {
+  position: absolute;
+  left: 11px;
+  width: 22px;
+  height: 2px;
+  background: var(--accent-dark);
+}
+
+.nav-toggle-bar {
+  top: 21px;
+}
+
+.nav-toggle-bar::before,
+.nav-toggle-bar::after {
+  content: '';
+  left: 0;
+}
+
+.nav-toggle-bar::before {
+  top: -7px;
+}
+
+.nav-toggle-bar::after {
+  top: 7px;
+}
+
+/* Tablet and phone: show the button, hide the menu until opened */
+@media (max-width: 900px) {
+  .site-header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 14px 20px;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  #site-nav {
+    display: none;
+    width: 100%;
+  }
+
+  #site-nav.open {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .nav-links li {
+    border-top: 1px solid var(--line);
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 14px 4px;
+  }
+}
